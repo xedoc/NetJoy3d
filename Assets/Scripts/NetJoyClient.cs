@@ -19,6 +19,8 @@ public class NetJoyClient : MonoBehaviour {
 	private WebClient wc = null;
 	private string url;
 	private Timer wtWebTimer = null;
+	private Timer pingTimer = null;
+	private object pingLock = new object();
 	private object wtLock = new object();
 	private bool downloading = false;
 	private string[] flapsRaised;
@@ -138,6 +140,8 @@ public class NetJoyClient : MonoBehaviour {
 		flapsLanding = new string[] {"закрылки: посадка", "flaps: landing"};
 		flapsTakeoff = new string[] {"закрылки: взлёт", "flaps: takeoff"};
 		netjoy = GameObject.Find("JoyMonitor");
+		pingTimer = new Timer( pingTick, null, Timeout.Infinite, Timeout.Infinite );
+
 		DataValid = true;
 	}
 	void Stop() {
@@ -147,6 +151,8 @@ public class NetJoyClient : MonoBehaviour {
 			wc.Dispose();
 			wtWebTimer.Change(Timeout.Infinite, Timeout.Infinite );
 			wtWebTimer.Dispose();
+			pingTimer.Change(Timeout.Infinite, Timeout.Infinite);
+			pingTimer.Dispose();
 		}
 		catch{}
 	}
@@ -160,7 +166,7 @@ public class NetJoyClient : MonoBehaviour {
 			if( wc == null )
 			{
 				try
-				{
+				{					
 					wc = new WebClient();
 					wc.Encoding = new System.Text.UTF8Encoding(false);
 					wtWebTimer = new Timer( downloadWTNumbers, null, 250, 250 );
@@ -184,7 +190,7 @@ public class NetJoyClient : MonoBehaviour {
 				}
 				catch( System.Exception e )
 				{
-					Debug.Log( e.Message);
+					//Debug.Log( e.Message );
 				}
 			}
 			
@@ -202,6 +208,17 @@ public class NetJoyClient : MonoBehaviour {
 	public static bool GearValid
 	{
 		get;set;
+	}
+	public void pingTick( object state)
+	{
+		lock( pingLock )
+		{
+			if( Connected )
+			{
+				ws.Send("PING");
+			}
+			
+		}
 	}
 	public void downloadWTNumbers( object state )
 	{
@@ -324,6 +341,7 @@ public class NetJoyClient : MonoBehaviour {
 		guiActive = false;
 		Debug.Log( "Websocket connected!" );
 		Connected = true;
+		pingTimer.Change(30000, 30000);
 
 	}
 	void HandleWsClosed( object sender, System.EventArgs e )
