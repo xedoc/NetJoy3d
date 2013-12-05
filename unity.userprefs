@@ -1,0 +1,16 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\NetJoyController.cs">
+    <Files>
+      <File FileName="Assets\NetJoyClient.cs" Line="11" Column="3" />
+      <File FileName="Assets\NetJoyController.cs" Line="4" Column="30" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="D:\Documents\New Unity Project\Assets\NetJoyClient.cs" line="23" />
+      <Breakpoint file="D:\Documents\New Unity Project\Assets\NetJoyClient.cs" line="18" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

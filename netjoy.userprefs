@@ -1,0 +1,17 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\VisibilityControl.cs">
+    <Files>
+      <File FileName="Assets\Scripts\VisibilityControl.cs" Line="12" Column="8" />
+      <File FileName="Assets\Scripts\NetJoyClient.cs" Line="250" Column="25" />
+      <File FileName="Assets\Scripts\HandleController.cs" Line="14" Column="93" />
+      <File FileName="Assets\Scripts\ThrottleController.cs" Line="17" Column="62" />
+      <File FileName="Assets\Scripts\GearController.cs" Line="5" Column="33" />
+      <File FileName="Assets\Scripts\FlapsController.cs" Line="13" Column="29" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
