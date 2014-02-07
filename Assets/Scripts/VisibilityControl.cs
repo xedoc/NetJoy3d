@@ -21,14 +21,7 @@ public class VisibilityControl : MonoBehaviour {
 		if( Status == curStatus )
 			return;
 		
-		if( Status && !curStatus )
-		{
-			SetActiveRecurse(true);
-		}
-		else if( !Status && curStatus )
-		{
-			SetActiveRecurse(false);
-		}
+		SetActiveRecurse(Status);		
 	}
 	
 	void SetActiveRecurse(bool status)

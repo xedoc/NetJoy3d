@@ -12,22 +12,22 @@ public class RudderController : MonoBehaviour {
 	void Start () {
 		
 	}
-	public float AxisPos
+	public float RudderPos
 	{
 		get { return NetJoyClient.RZ+32767.0f; }
 	}
 	// Update is called once per frame
 	void Update () {
-		
-		float delta = (AxisPos * 1.0f / 65535.0f) - curX;
+		float rPos = RudderPos;		
+		float delta = (rPos * 1.0f / 65535.0f) - curX;
 		
 		if( delta == 0 )
 			return;
 		
-		float newX = minX + (AxisPos * 1.0f / 65535.0f);
+		float newX = minX + (rPos * 1.0f / 65535.0f);
 			
 		if( !RightPedal )
-			newX = maxX - (AxisPos * 1.0f / 65535.0f);
+			newX = maxX - (rPos * 1.0f / 65535.0f);
 			
 		transform.position = new Vector3( newX ,transform.position.y,transform.position.z);
 		curX = curX + delta;

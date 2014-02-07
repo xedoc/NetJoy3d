@@ -188,7 +188,7 @@ public class NetJoyClient : MonoBehaviour {
 					Debug.Log("Connecting to " + url);
 					ws.Open();
 				}
-				catch( System.Exception e )
+				catch
 				{
 					//Debug.Log( e.Message );
 				}
