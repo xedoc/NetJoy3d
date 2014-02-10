@@ -12,6 +12,8 @@ public class BreaksController : MonoBehaviour {
 		oldPos = new Vector2(NetJoyClient.RX, NetJoyClient.RY);
 		initialAngle = transform.rotation.y; 
 		curAngle = initialAngle;
+		NetJoyClient.RX = -32767;
+		NetJoyClient.RY = -32767;
 	}
 	private float AxisPos
 	{
