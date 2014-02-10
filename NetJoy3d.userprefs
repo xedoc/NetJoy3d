@@ -2,19 +2,18 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\BreaksController.cs">
     <Files>
-      <File FileName="Assets\Scripts\BreaksController.cs" Line="7" Column="13" />
-      <File FileName="Assets\Scripts\NetJoyClient.cs" Line="191" Column="15" />
+      <File FileName="Assets\Scripts\BreaksController.cs" Line="16" Column="27" />
+      <File FileName="Assets\Scripts\NetJoyClient.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Rotator.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\RudderController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\CrosshairController.cs" Line="9" Column="6" />
+      <File FileName="Assets\Scripts\CrosshairController.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\TextureScaler.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\ScreenManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\BreaksController.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\VisibilityControl.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\ThrottleController.cs" Line="31" Column="1" />
-      <File FileName="Assets\Scripts\HandleController.cs" Line="12" Column="8" />
-      <File FileName="Assets\Scripts\GearController.cs" Line="12" Column="2" />
-      <File FileName="Assets\Scripts\FlapsController.cs" Line="9" Column="36" />
+      <File FileName="Assets\Scripts\ThrottleController.cs" Line="17" Column="66" />
+      <File FileName="Assets\Scripts\HandleController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GearController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\FlapsController.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

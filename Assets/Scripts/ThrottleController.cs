@@ -14,7 +14,7 @@ public class ThrottleController : MonoBehaviour {
 	}
 	// Update is called once per frame
 	void Update () {
-		float angle = (AxisPos * maxAngle*2 / 65535.0f) - maxAngle;
+		float angle = (AxisPos * maxAngle*2 / 65535.0f) - maxAngle - 10;
 		float rotationX = curAngle;
 		//rotationX = Mathf.Clamp( rotationX, initialAngle - maxAngle, initialAngle + maxAngle);
 		float targetAngle = initialAngle + angle;
