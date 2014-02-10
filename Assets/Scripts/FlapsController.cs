@@ -3,13 +3,17 @@ using System.Collections;
 
 public class FlapsController : MonoBehaviour {
 	private float curAngle = -30.0f;
+	private NetJoyClient.FlapsPos lastFlapsPos;
 	// Use this for initialization
 	void Start () {
-		
+		lastFlapsPos = NetJoyClient.Flaps;
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		if( lastFlapsPos == NetJoyClient.Flaps )
+			return;
+
 		float newAngle = curAngle;
 		Material newMaterial = renderer.sharedMaterial;
 		switch( NetJoyClient.Flaps )

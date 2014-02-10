@@ -26,11 +26,20 @@ public class TextureScaler	 : MonoBehaviour {
 	void ScreenSizeChanged( Vector2 newSize )
 	{
 		float scaledWidth = originalRect.width * newSize.x / originalScreenSize.x;
+		float scaledHeight = originalRect.height * newSize.y / originalScreenSize.y;
+
 		if( currentRect.width != scaledWidth )
 		{
 			currentRect.width = scaledWidth;
 			currentRect.height = scaledWidth * aspectRatio;			
 			guiTexture.pixelInset = currentRect;
-		}		
+		}
+
+		if( currentRect.height != scaledHeight )
+		{
+			currentRect.width = scaledHeight * aspectRatio;
+			currentRect.height = scaledHeight;			
+			guiTexture.pixelInset = currentRect;
+		}
 	}
 }

@@ -21,7 +21,7 @@ public class ThrottleController : MonoBehaviour {
 		float delta = targetAngle - rotationX;
 		if( delta == 0 )
 			return;
-		Debug.Log(curAngle + " " + angle + " " + delta + " " + targetAngle);
+		//Debug.Log(curAngle + " " + angle + " " + delta + " " + targetAngle);
 		
 		transform.Rotate( new Vector3( 0, delta, 0 ));
 		curAngle = curAngle + delta;

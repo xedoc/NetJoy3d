@@ -30,12 +30,15 @@ public class NetJoyClient : MonoBehaviour {
 	private bool isvalid;
 	private GameObject netjoy;
 	private string lastTime = string.Empty;
+	private string lastJson = string.Empty;
+	private string lastHudMsgs = string.Empty;
 	
 	void OnApplicationQuit()
 	{
 		PlayerPrefs.Save();
-		ThreadPool.QueueUserWorkItem( a => Stop() );
-		Thread.Sleep( 1000 );
+		Stop ();
+		//ThreadPool.QueueUserWorkItem( a => Stop() );
+		//Thread.Sleep( 1000 );
 		
 	}
 	void OnGUI() {
@@ -232,8 +235,9 @@ public class NetJoyClient : MonoBehaviour {
 			{
 				string indicators = wc.DownloadString( string.Format("http://{0}:8111/indicators", host) );
 			
-				if( !string.IsNullOrEmpty( indicators ) )
+				if( !string.IsNullOrEmpty( indicators ) && indicators != lastJson )
 				{
+					lastJson = indicators;
 				
 					JObject indicatorsJson = JObject.Parse( indicators );
 					
@@ -261,7 +265,7 @@ public class NetJoyClient : MonoBehaviour {
 								if( newValue != Gear )
 								{
 									Gear = newValue;
-									Debug.Log ( Gear );
+									Debug.Log ( "Gear: " + Gear.ToString() );
 								}
 							}				
 							GearValid = true;
@@ -270,8 +274,10 @@ public class NetJoyClient : MonoBehaviour {
 				}
 				
 				string messages = wc.DownloadString( string.Format("http://{0}:8111/hudmsg?lastEvt={1}&lastDmg={2}", host, LastEvent, LastDamage));
-				if( !string.IsNullOrEmpty( messages ) )
+				if( !string.IsNullOrEmpty( messages ) && messages != lastHudMsgs )
 				{
+					lastHudMsgs = messages;
+
 					JObject messagesJson = JObject.Parse(messages);
 					if( messagesJson != null )
 					{						
@@ -349,6 +355,7 @@ public class NetJoyClient : MonoBehaviour {
 		Debug.Log( "Closed" );
 		Stop ();
 		runConnect = true;
+		
 		ConnectSocket();
 		
 	}

@@ -52,45 +52,46 @@
      <Compile Include="Assets\Scripts\GearController.cs" />
      <Compile Include="Assets\Scripts\HandleController.cs" />
      <Compile Include="Assets\Scripts\NetJoyClient.cs" />
+     <Compile Include="Assets\Scripts\Rotator.cs" />
      <Compile Include="Assets\Scripts\RudderController.cs" />
      <Compile Include="Assets\Scripts\ScreenManager.cs" />
      <Compile Include="Assets\Scripts\TextureScaler.cs" />
      <Compile Include="Assets\Scripts\ThrottleController.cs" />
      <Compile Include="Assets\Scripts\VisibilityControl.cs" />
-     <None Include="Assets\References\Newtonsoft.Json.xml" />
+     <None Include="Assets\Materials\References\Newtonsoft.Json.xml" />
      <None Include="Assets\Depth Mask Example\Shaders\DepthMask.shader" />
  <Reference Include="log4net">
- <HintPath>Assets\References\log4net.dll</HintPath>
+ <HintPath>Assets\Materials\References\log4net.dll</HintPath>
  </Reference>
  <Reference Include="Microsoft.Scripting.Core">
- <HintPath>Assets\References\Microsoft.Scripting.Core.dll</HintPath>
+ <HintPath>Assets\Materials\References\Microsoft.Scripting.Core.dll</HintPath>
  </Reference>
  <Reference Include="Microsoft.Scripting">
- <HintPath>Assets\References\Microsoft.Scripting.dll</HintPath>
+ <HintPath>Assets\Materials\References\Microsoft.Scripting.dll</HintPath>
  </Reference>
  <Reference Include="Newtonsoft.Json">
- <HintPath>Assets\References\Newtonsoft.Json.dll</HintPath>
+ <HintPath>Assets\Materials\References\Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="SuperSocket.Common">
- <HintPath>Assets\References\SuperSocket.Common.dll</HintPath>
+ <HintPath>Assets\Materials\References\SuperSocket.Common.dll</HintPath>
  </Reference>
  <Reference Include="SuperSocket.Dlr">
- <HintPath>Assets\References\SuperSocket.Dlr.dll</HintPath>
+ <HintPath>Assets\Materials\References\SuperSocket.Dlr.dll</HintPath>
  </Reference>
  <Reference Include="SuperSocket.Facility">
- <HintPath>Assets\References\SuperSocket.Facility.dll</HintPath>
+ <HintPath>Assets\Materials\References\SuperSocket.Facility.dll</HintPath>
  </Reference>
  <Reference Include="SuperSocket.SocketBase">
- <HintPath>Assets\References\SuperSocket.SocketBase.dll</HintPath>
+ <HintPath>Assets\Materials\References\SuperSocket.SocketBase.dll</HintPath>
  </Reference>
  <Reference Include="SuperSocket.SocketEngine">
- <HintPath>Assets\References\SuperSocket.SocketEngine.dll</HintPath>
+ <HintPath>Assets\Materials\References\SuperSocket.SocketEngine.dll</HintPath>
  </Reference>
  <Reference Include="System.Threading">
- <HintPath>Assets\References\System.Threading.dll</HintPath>
+ <HintPath>Assets\Materials\References\System.Threading.dll</HintPath>
  </Reference>
  <Reference Include="WebSocket4Net">
- <HintPath>Assets\References\WebSocket4Net.dll</HintPath>
+ <HintPath>Assets\Materials\References\WebSocket4Net.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
