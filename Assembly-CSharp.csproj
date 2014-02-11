@@ -61,10 +61,10 @@
      <None Include="Assets\Materials\References\Newtonsoft.Json.xml" />
      <None Include="Assets\Depth Mask Example\Shaders\DepthMask.shader" />
  <Reference Include="log4net">
- <HintPath>Assets\dlls\log4net.dll</HintPath>
+ <HintPath>Assets\Materials\References\log4net.dll</HintPath>
  </Reference>
  <Reference Include="Microsoft.Scripting.Core">
- <HintPath>Assets\dlls\Microsoft.Scripting.Core.dll</HintPath>
+ <HintPath>Assets\Materials\References\Microsoft.Scripting.Core.dll</HintPath>
  </Reference>
  <Reference Include="Microsoft.Scripting">
  <HintPath>Assets\Materials\References\Microsoft.Scripting.dll</HintPath>
@@ -73,7 +73,7 @@
  <HintPath>Assets\Materials\References\Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="SuperSocket.Common">
- <HintPath>Assets\dlls\SuperSocket.Common.dll</HintPath>
+ <HintPath>Assets\Materials\References\SuperSocket.Common.dll</HintPath>
  </Reference>
  <Reference Include="SuperSocket.Dlr">
  <HintPath>Assets\Materials\References\SuperSocket.Dlr.dll</HintPath>
@@ -82,7 +82,7 @@
  <HintPath>Assets\Materials\References\SuperSocket.Facility.dll</HintPath>
  </Reference>
  <Reference Include="SuperSocket.SocketBase">
- <HintPath>Assets\dlls\SuperSocket.SocketBase.dll</HintPath>
+ <HintPath>Assets\Materials\References\SuperSocket.SocketBase.dll</HintPath>
  </Reference>
  <Reference Include="SuperSocket.SocketEngine">
  <HintPath>Assets\Materials\References\SuperSocket.SocketEngine.dll</HintPath>
@@ -91,7 +91,7 @@
  <HintPath>Assets\Materials\References\System.Threading.dll</HintPath>
  </Reference>
  <Reference Include="WebSocket4Net">
- <HintPath>Assets\dlls\WebSocket4Net.dll</HintPath>
+ <HintPath>Assets\Materials\References\WebSocket4Net.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
