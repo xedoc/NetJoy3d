@@ -1,22 +1,12 @@
 # Blender MTL File: 'x52throttle.blend'
-# Material Count: 2
+# Material Count: 1
 
-newmtl Material.001
-Ns 92.156863
+newmtl x52throttle
+Ns 96.078431
 Ka 0.000000 0.000000 0.000000
-Kd 0.337740 0.337740 0.337740
-Ks 0.500000 0.500000 0.500000
+Kd 0.017583 0.017583 0.017583
+Ks 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
-illum 2
-map_Kd C:\Users\meshkov\Documents\joy\x52throttle.png
-
-newmtl Material_NONE
-Ns 92.156863
-Ka 0.000000 0.000000 0.000000
-Kd 0.337740 0.337740 0.337740
-Ks 0.500000 0.500000 0.500000
-Ni 1.000000
-d 1.000000
-illum 2
-map_Kd C:\Users\meshkov\Documents\joy\x52throttle.png
+illum 0
+map_Kd x52throttle.png
